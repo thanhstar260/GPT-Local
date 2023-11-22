@@ -21,6 +21,7 @@ const chatGPTKey = 'sk-'; // Paste the API key here
 ```
 
 Replace `'sk-*****'` with your actual OpenAI GPT-3 API key. 
+
 Login <https://platform.openai.com/api-keys> and create your key.
 
 2. **Start the local server**
@@ -64,7 +65,8 @@ pip install llama-cpp-python
 3. **Run local OpenAI server**
 
 Run the following script to run an OpenAI API server locally. The server should run at port 8000
-Run the command on CMD: --n_gpu_layers 0 if your device does not have a GPU.
+
+Run the command on CMD: `--n_gpu_layers 0` if your device does not have a GPU.
 
 ```bash
 python -m llama_cpp.server --model "./models/mistral-7b-openorca.Q4_0.gguf" --chat_format chatml --n_gpu_layers 1
@@ -89,6 +91,6 @@ Open the `index.html` file and locate the following line
   const OPEN_AI_ENDPOINT = 'http://localhost:8000/v1' // Uncomment this line
 ```
 
-Run index.html with `Live Server` of vscode 
+Run index.html with extension `Live Server` of vscode to Demo.
 
-Reference from "Tôi đi code dạo"
+Reference from "Tôi đi code dạo".
